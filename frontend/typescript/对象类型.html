@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>对象类型 | Binks の Blog</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/images/favicon.ico">
+    <meta name="description" content="Binks の Blog">
+    <link rel="preload" href="/assets/css/0.styles.5278ec6f.css" as="style"><link rel="preload" href="/assets/js/app.79c4ef9b.js" as="script"><link rel="preload" href="/assets/js/2.62e03d70.js" as="script"><link rel="preload" href="/assets/js/28.d627a50b.js" as="script"><link rel="prefetch" href="/assets/js/10.2b9ec67f.js"><link rel="prefetch" href="/assets/js/11.97b90e53.js"><link rel="prefetch" href="/assets/js/12.92e99fae.js"><link rel="prefetch" href="/assets/js/13.d6010d2b.js"><link rel="prefetch" href="/assets/js/14.2bd827e2.js"><link rel="prefetch" href="/assets/js/15.a4bed71d.js"><link rel="prefetch" href="/assets/js/16.0a4c23bf.js"><link rel="prefetch" href="/assets/js/17.990b8886.js"><link rel="prefetch" href="/assets/js/18.10eb592c.js"><link rel="prefetch" href="/assets/js/19.a857fa1d.js"><link rel="prefetch" href="/assets/js/20.bf3a85a3.js"><link rel="prefetch" href="/assets/js/21.eb0b8747.js"><link rel="prefetch" href="/assets/js/22.163a2ab8.js"><link rel="prefetch" href="/assets/js/23.c9bb7e11.js"><link rel="prefetch" href="/assets/js/24.7baf5745.js"><link rel="prefetch" href="/assets/js/25.22305377.js"><link rel="prefetch" href="/assets/js/26.1f9a22f1.js"><link rel="prefetch" href="/assets/js/27.3f4612a4.js"><link rel="prefetch" href="/assets/js/29.acd9ae0a.js"><link rel="prefetch" href="/assets/js/3.f32212ed.js"><link rel="prefetch" href="/assets/js/30.16430b08.js"><link rel="prefetch" href="/assets/js/31.cb714c34.js"><link rel="prefetch" href="/assets/js/32.d4266de2.js"><link rel="prefetch" href="/assets/js/33.985bba62.js"><link rel="prefetch" href="/assets/js/4.34866f2f.js"><link rel="prefetch" href="/assets/js/5.d8740383.js"><link rel="prefetch" href="/assets/js/6.fc12b4c6.js"><link rel="prefetch" href="/assets/js/7.e3565c63.js"><link rel="prefetch" href="/assets/js/8.02f836d8.js"><link rel="prefetch" href="/assets/js/9.8b0a1d5b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.5278ec6f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Binks の Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博文" class="dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/" class="nav-link router-link-active">
+  前端篇
+</a></li><li class="dropdown-item"><!----> <a href="/backstage/" class="nav-link">
+  后端篇
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/BinksGao" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博文" class="dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/" class="nav-link router-link-active">
+  前端篇
+</a></li><li class="dropdown-item"><!----> <a href="/backstage/" class="nav-link">
+  后端篇
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/BinksGao" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" class="sidebar-link">首页</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>前端篇</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>TypeScript</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/frontend/typescript/数据类型.html" class="sidebar-link">基础数据类型</a></li><li><a href="/frontend/typescript/任意值.html" class="sidebar-link">任意值</a></li><li><a href="/frontend/typescript/类型推断.html" class="sidebar-link">类型推断</a></li><li><a href="/frontend/typescript/联合类型.html" class="sidebar-link">联合类型</a></li><li><a href="/frontend/typescript/对象类型.html" class="active sidebar-link">对象类型</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/typescript/对象类型.html#对象类型" class="sidebar-link">对象类型</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/typescript/对象类型.html#接口" class="sidebar-link">接口</a></li><li class="sidebar-sub-header"><a href="/frontend/typescript/对象类型.html#例子" class="sidebar-link">例子</a></li><li class="sidebar-sub-header"><a href="/frontend/typescript/对象类型.html#可选属性" class="sidebar-link">可选属性</a></li><li class="sidebar-sub-header"><a href="/frontend/typescript/对象类型.html#任意属性" class="sidebar-link">任意属性</a></li><li class="sidebar-sub-header"><a href="/frontend/typescript/对象类型.html#只读属性" class="sidebar-link">只读属性</a></li></ul></li></ul></li><li><a href="/frontend/typescript/数组类型.html" class="sidebar-link">数组类型</a></li><li><a href="/frontend/typescript/函数类型.html" class="sidebar-link">函数类型</a></li><li><a href="/frontend/typescript/类型断言.html" class="sidebar-link">类型断言</a></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>ES6</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>后端篇</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="对象类型"><a href="#对象类型" class="header-anchor">#</a> 对象类型</h2> <p>在TypeScript中，我们使用接口来定义对象的类型。</p> <h3 id="接口"><a href="#接口" class="header-anchor">#</a> 接口</h3> <p>在面向对象语言中，接口是一个很重要的概念，它是对行为的抽象，而具体如何行动需要由类去实现。<br>
+TypeScript中的接口是一个非常灵活的概念，除了可用于对类的一部分行为进行抽象以外，也常用于对「对象的形状」进行描述。</p> <h3 id="例子"><a href="#例子" class="header-anchor">#</a> 例子</h3> <div class="language-ts line-numbers-mode"><pre class="language-ts"><code><span class="token keyword">interface</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    age<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> tom<span class="token operator">:</span> Person <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">'Tom'</span><span class="token punctuation">,</span>
+    age<span class="token operator">:</span> <span class="token number">25</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>我们定义了一个接口 Person，接着定义了一个变量 tom，它的类型是 Person。这样，我们就约束了 tom 的形状必须和接口 Person 一致。<br>
+定义的变量比接口少一些属性是不被允许的:</p> <div class="language-ts line-numbers-mode"><pre class="language-ts"><code><span class="token keyword">interface</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    age<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> tom<span class="token operator">:</span> Person <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">'Tom'</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// index.ts(6,5): error TS2322: Type '{ name: string; }' is not assignable to type 'Person'.</span>
+<span class="token comment">//   Property 'age' is missing in type '{ name: string; }'.</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>定义的变量比接口多一些属性也是不被允许的:</p> <div class="language-ts line-numbers-mode"><pre class="language-ts"><code><span class="token keyword">interface</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    age<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> tom<span class="token operator">:</span> Person <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">'Tom'</span><span class="token punctuation">,</span>
+    age<span class="token operator">:</span> <span class="token number">25</span><span class="token punctuation">,</span>
+    gender<span class="token operator">:</span> <span class="token string">'male'</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// index.ts(9,5): error TS2322: Type '{ name: string; age: number; gender: string; }' is not assignable to type 'Person'.</span>
+<span class="token comment">//   Object literal may only specify known properties, and 'gender' does not exist in type 'Person'.</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>可见，赋值的时候，变量的形状必须和接口的形状保持一致。</p> <h3 id="可选属性"><a href="#可选属性" class="header-anchor">#</a> 可选属性</h3> <p>有时候我们希望不要匹配一个形状，此时可以使用可选属性:</p> <div class="language-ts line-numbers-mode"><pre class="language-ts"><code><span class="token keyword">interface</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    age<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> tom<span class="token operator">:</span> Person <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">'Tom'</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> jack<span class="token operator">:</span> Person <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">'Jack'</span><span class="token punctuation">,</span>
+    age<span class="token operator">:</span> <span class="token number">20</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>此时仍然不允许添加未定义的属性:</p> <div class="language-ts line-numbers-mode"><pre class="language-ts"><code>
+<span class="token keyword">let</span> tom<span class="token operator">:</span> Person <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">'Tom'</span><span class="token punctuation">,</span>
+    age<span class="token operator">:</span> <span class="token number">25</span><span class="token punctuation">,</span>
+    gender<span class="token operator">:</span> <span class="token string">'male'</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// examples/playground/index.ts(9,5): error TS2322: Type '{ name: string; age: number; gender: string; }' is not assignable to type 'Person'.</span>
+<span class="token comment">//   Object literal may only specify known properties, and 'gender' does not exist in type 'Person'.</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="任意属性"><a href="#任意属性" class="header-anchor">#</a> 任意属性</h3> <p>有时候我们希望一个接口允许有任意的属性:</p> <div class="language-ts line-numbers-mode"><pre class="language-ts"><code><span class="token keyword">interface</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    age<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+    <span class="token punctuation">[</span>propName<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> tom<span class="token operator">:</span> Person <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">'Tom'</span><span class="token punctuation">,</span>
+    gender<span class="token operator">:</span> <span class="token string">'male'</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>使用 [propName: string] 定义了任意属性取 string 类型的值。<br>
+需要注意的是，一旦定义了任意属性，那么确定属性和可选属性的类型都必须是它的类型的子集:</p> <div class="language-ts line-numbers-mode"><pre class="language-ts"><code><span class="token keyword">interface</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    age<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+    <span class="token punctuation">[</span>propName<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> tom<span class="token operator">:</span> Person <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">'Tom'</span><span class="token punctuation">,</span>
+    age<span class="token operator">:</span> <span class="token number">25</span><span class="token punctuation">,</span>
+    gender<span class="token operator">:</span> <span class="token string">'male'</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// index.ts(3,5): error TS2411: Property 'age' of type 'number' is not assignable to string index type 'string'.</span>
+<span class="token comment">// index.ts(7,5): error TS2322: Type '{ [x: string]: string | number; name: string; age: number; gender: string; }' is not assignable to type 'Person'.</span>
+<span class="token comment">// Index signatures are incompatible.</span>
+<span class="token comment">// Type 'string | number' is not assignable to type 'string'.</span>
+<span class="token comment">// Type 'number' is not assignable to type 'string'.</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>在报错信息中可以看出，此时 { name: 'Tom', age: 25, gender: 'male' } 的类型被推断成了 { [x: string]: string | number; name: string; age: number; gender: string; } <br>
+一个接口中只能定义一个任意属性。如果接口中有多个类型的属性，则可以在任意属性中使用联合类型:</p> <div class="language-ts line-numbers-mode"><pre class="language-ts"><code><span class="token keyword">interface</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    age<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+    <span class="token punctuation">[</span>propName<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token builtin">string</span> <span class="token operator">|</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> tom<span class="token operator">:</span> Person <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">'Tom'</span><span class="token punctuation">,</span>
+    age<span class="token operator">:</span> <span class="token number">25</span><span class="token punctuation">,</span>
+    gender<span class="token operator">:</span> <span class="token string">'male'</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="只读属性"><a href="#只读属性" class="header-anchor">#</a> 只读属性</h3> <p>有时候我们希望对象中的一些字段只能在创建的时候被赋值，那么可以用 readonly 定义只读属性:</p> <div class="language-ts line-numbers-mode"><pre class="language-ts"><code><span class="token keyword">interface</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+    <span class="token keyword">readonly</span> id<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+    name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    age<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+    <span class="token punctuation">[</span>propName<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> tom<span class="token operator">:</span> Person <span class="token operator">=</span> <span class="token punctuation">{</span>
+    id<span class="token operator">:</span> <span class="token number">89757</span><span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">'Tom'</span><span class="token punctuation">,</span>
+    gender<span class="token operator">:</span> <span class="token string">'male'</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+tom<span class="token punctuation">.</span>id <span class="token operator">=</span> <span class="token number">9527</span><span class="token punctuation">;</span>
+
+<span class="token comment">// index.ts(14,5): error TS2540: Cannot assign to 'id' because it is a constant or a read-only property.</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>使用 readonly 定义的属性 id 初始化后，又被赋值了，所以报错了</p> <div class="language-ts line-numbers-mode"><pre class="language-ts"><code><span class="token keyword">interface</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+    <span class="token keyword">readonly</span> id<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+    name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    age<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+    <span class="token punctuation">[</span>propName<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> tom<span class="token operator">:</span> Person <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">'Tom'</span><span class="token punctuation">,</span>
+    gender<span class="token operator">:</span> <span class="token string">'male'</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+tom<span class="token punctuation">.</span>id <span class="token operator">=</span> <span class="token number">89757</span><span class="token punctuation">;</span>
+
+<span class="token comment">// index.ts(8,5): error TS2322: Type '{ name: string; gender: string; }' is not assignable to type 'Person'.</span>
+<span class="token comment">//   Property 'id' is missing in type '{ name: string; gender: string; }'.</span>
+<span class="token comment">// index.ts(13,5): error TS2540: Cannot assign to 'id' because it is a constant or a read-only property.</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>报错信息有两处，第一处是在对 tom 进行赋值的时候，没有给 id 赋值。<br>
+第二处是在给 tom.id 赋值的时候，由于它是只读属性，所以报错了。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/frontend/typescript/联合类型.html" class="prev">
+        联合类型
+      </a></span> <span class="next"><a href="/frontend/typescript/数组类型.html">
+        数组类型
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.79c4ef9b.js" defer></script><script src="/assets/js/2.62e03d70.js" defer></script><script src="/assets/js/28.d627a50b.js" defer></script>
+  </body>
+</html>

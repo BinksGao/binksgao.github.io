@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>自动化部署Vue项目 | Binks の Blog</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/images/favicon.ico">
+    <meta name="description" content="Binks の Blog">
+    <link rel="preload" href="/assets/css/0.styles.5278ec6f.css" as="style"><link rel="preload" href="/assets/js/app.79c4ef9b.js" as="script"><link rel="preload" href="/assets/js/2.62e03d70.js" as="script"><link rel="preload" href="/assets/js/3.f32212ed.js" as="script"><link rel="prefetch" href="/assets/js/10.2b9ec67f.js"><link rel="prefetch" href="/assets/js/11.97b90e53.js"><link rel="prefetch" href="/assets/js/12.92e99fae.js"><link rel="prefetch" href="/assets/js/13.d6010d2b.js"><link rel="prefetch" href="/assets/js/14.2bd827e2.js"><link rel="prefetch" href="/assets/js/15.a4bed71d.js"><link rel="prefetch" href="/assets/js/16.0a4c23bf.js"><link rel="prefetch" href="/assets/js/17.990b8886.js"><link rel="prefetch" href="/assets/js/18.10eb592c.js"><link rel="prefetch" href="/assets/js/19.a857fa1d.js"><link rel="prefetch" href="/assets/js/20.bf3a85a3.js"><link rel="prefetch" href="/assets/js/21.eb0b8747.js"><link rel="prefetch" href="/assets/js/22.163a2ab8.js"><link rel="prefetch" href="/assets/js/23.c9bb7e11.js"><link rel="prefetch" href="/assets/js/24.7baf5745.js"><link rel="prefetch" href="/assets/js/25.22305377.js"><link rel="prefetch" href="/assets/js/26.1f9a22f1.js"><link rel="prefetch" href="/assets/js/27.3f4612a4.js"><link rel="prefetch" href="/assets/js/28.d627a50b.js"><link rel="prefetch" href="/assets/js/29.acd9ae0a.js"><link rel="prefetch" href="/assets/js/30.16430b08.js"><link rel="prefetch" href="/assets/js/31.cb714c34.js"><link rel="prefetch" href="/assets/js/32.d4266de2.js"><link rel="prefetch" href="/assets/js/33.985bba62.js"><link rel="prefetch" href="/assets/js/4.34866f2f.js"><link rel="prefetch" href="/assets/js/5.d8740383.js"><link rel="prefetch" href="/assets/js/6.fc12b4c6.js"><link rel="prefetch" href="/assets/js/7.e3565c63.js"><link rel="prefetch" href="/assets/js/8.02f836d8.js"><link rel="prefetch" href="/assets/js/9.8b0a1d5b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.5278ec6f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Binks の Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博文" class="dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/" class="nav-link router-link-active">
+  前端篇
+</a></li><li class="dropdown-item"><!----> <a href="/backstage/" class="nav-link">
+  后端篇
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/BinksGao" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博文" class="dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/" class="nav-link router-link-active">
+  前端篇
+</a></li><li class="dropdown-item"><!----> <a href="/backstage/" class="nav-link">
+  后端篇
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/BinksGao" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" class="sidebar-link">首页</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>前端篇</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>JavaScript</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/frontend/javascript/常用代码段.html" class="sidebar-link">常用代码段</a></li><li><a href="/frontend/javascript/vue面试题.html" class="sidebar-link">Vue面试题汇总</a></li><li><a href="/frontend/javascript/vue自动化部署.html" class="active sidebar-link">Vue项目自动化部署</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/javascript/vue自动化部署.html#自动化部署vue项目" class="sidebar-link">自动化部署Vue项目</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/javascript/vue自动化部署.html#前言" class="sidebar-link">前言</a></li><li class="sidebar-sub-header"><a href="/frontend/javascript/vue自动化部署.html#docker" class="sidebar-link">Docker</a></li><li class="sidebar-sub-header"><a href="/frontend/javascript/vue自动化部署.html#jenkins" class="sidebar-link">Jenkins</a></li><li class="sidebar-sub-header"><a href="/frontend/javascript/vue自动化部署.html#安装docker" class="sidebar-link">安装Docker</a></li><li class="sidebar-sub-header"><a href="/frontend/javascript/vue自动化部署.html#docker安装jenkins" class="sidebar-link">Docker安装Jenkins</a></li><li class="sidebar-sub-header"><a href="/frontend/javascript/vue自动化部署.html#jenkins的初始化使用" class="sidebar-link">Jenkins的初始化使用</a></li><li class="sidebar-sub-header"><a href="/frontend/javascript/vue自动化部署.html#jenkins构建vue项目" class="sidebar-link">jenkins构建Vue项目</a></li><li class="sidebar-sub-header"><a href="/frontend/javascript/vue自动化部署.html#nginx部署构建的vue项目" class="sidebar-link">Nginx部署构建的Vue项目</a></li></ul></li></ul></li><li><a href="/frontend/javascript/axios.html" class="sidebar-link">Axios基础</a></li><li><a href="/frontend/javascript/面试题汇总.html" class="sidebar-link">面试题汇总</a></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>TypeScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>ES6</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>后端篇</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="自动化部署vue项目"><a href="#自动化部署vue项目" class="header-anchor">#</a> 自动化部署Vue项目</h2> <h3 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h3> <h3 id="docker"><a href="#docker" class="header-anchor">#</a> Docker</h3> <p>Docker 是一个开源的应用容器引擎,Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。</p> <p>Docker的应用场景:</p> <div class="language- extra-class"><pre><code>1、 Web 应用的自动化打包和发布。
+2、 自动化测试和持续集成、发布。
+3、 在服务型环境中部署和调整数据库或其他的后台应用。
+4、 从头编译或者扩展现有的 OpenShift 或 Cloud Foundry 平台来搭建自己的 PaaS 环境。
+</code></pre></div><p>Docker的优点:</p> <ul><li><p>1、快速，一致地交付您的应用程序</p> <p>Docker 允许开发人员使用您提供的应用程序或服务的本地容器在标准化环境中工作，从而简化了开发的生命周期</p></li> <li><p>2、响应式部署和扩展</p> <p>Docker 是基于容器的平台，允许高度可移植的工作负载。Docker 容器可以在开发人员的本机上，数据中心的物理或虚拟机上，云服务上或混合环境中运行。
+Docker 的可移植性和轻量级的特性，还可以使您轻松地完成动态管理的工作负担，并根据业务需求指示，实时扩展或拆除应用程序和服务。</p></li> <li><p>3、在同一硬件上运行更多工作负载
+Docker 轻巧快速。它为基于虚拟机管理程序的虚拟机提供了可行、经济、高效的替代方案，因此您可以利用更多的计算能力来实现业务目标。Docker 非常适合于高密度环境以及中小型部署，而您可以用更少的资源做更多的事情。</p></li></ul> <h3 id="jenkins"><a href="#jenkins" class="header-anchor">#</a> Jenkins</h3> <p>Jenkins是一个开源的、提供友好操作界面的持续集成(CI)工具，起源于Hudson（Hudson是商用的），主要用于持续、自动的构建/测试软件项目、监控外部任务的运行。</p> <ul><li>持续集成（CI）
+持续集成指的是，频繁地（一天多次）将代码集成到主干。将软件个人研发的部分向软件整体部分交付，频繁进行集成以便更快地发现其中的错误。</li></ul> <p>它的优点有两个:</p> <div class="language- extra-class"><pre><code>1. 快速发现错误。每完成一点更新，就集成到主干，可以快速发现错误，定位错误也比较容易；
+2. 防止分支大幅偏离主干。如果不是经常集成，主干又在不断更新，会导致以后集成的难度变大，甚至难以集成。
+</code></pre></div><ul><li><p>持续交付</p> <p>持续交付（Continuous delivery）指的是，频繁地将软件的新版本，交付给质量团队或者用户，以供评审。如果评审通过，代码就进入生产阶段。</p></li> <li><p>持续部署</p> <p>持续部署（continuous deployment）是持续交付的下一步，指的是代码通过评审以后，自动部署到生产环境。</p> <p>持续部署的目标是，代码在任何时刻都是可部署的，可以进入生产阶段。</p> <p>持续部署的前提是能自动化完成测试、构建、部署等步骤。</p></li></ul> <h3 id="安装docker"><a href="#安装docker" class="header-anchor">#</a> 安装Docker</h3> <p>这里假设你已经有了一台Centos服务器，接下来就是安装Docker,以及使用Docker容器安装Jenkins</p> <ul><li>1、使用yum安装Docker</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>sudo yum install docker
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>2、启动Docker</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>service docker start
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>3、设置开机启动docker</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>systemctl enable docker
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>4、查看docker是否安装成功</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>docker info
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>5、重启docker</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>sudo service docker restart
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="docker安装jenkins"><a href="#docker安装jenkins" class="header-anchor">#</a> Docker安装Jenkins</h3> <ul><li>1、使用docker命令下载Jenkins</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>sudo docker pull jenkins
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>2、创建用于存放jenkins的文件夹</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>mkdir /home/var/jenkins
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>3、cd进入/home/var/目录，设置jenkins文件夹的归属用户UID为1000</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>sudo chown -R 1000:1000 jenkins/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>4、启动Jenkins</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>sudo docker run -itd -p 8080:8080 -p 50000:50000 --name jenkins --privileged=true  -v /home/var/jenkins:/var/jenkins_home jenkins
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>5、Jenkins重启</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>docker restart jenkins
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>以上的安装是常规安装过程，安装 Jenkins 后，初始化下载插件总是失败，导致安装不成功，重试好几次都是卡在安装插件那。</p> <p>安装插件失败，其实是拉取了官方的 Jenkins 镜像，然后在初始化安装插件时，会从国外的网站去获取，导致安装非常缓慢，或者安装失败。最好的解决方案时拉取 Jenkins 中文社区 提供的 Jenkins 镜像，即可解决。</p> <p>下面的步骤是采用国内镜像的方式去安装Jenkins</p> <ul><li>1、获取国内镜像</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>docker pull jenkinszh/jenkins-zh:latest
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li><p>2、设置容器挂载目录
+Jenkins 容器启动后，会产生安装配置文件，需要把这些文件的生成地址改为，linux服务器上的目录。</p> <ul><li><p>创建 Jenkins 生成目录</p> <p>mkdir /home/jenkins_home</p></li> <li><p>目录授权</p> <p>chmod 777 /home/jenkins_home    不授权启动后无法生成文件</p></li> <li><p>启动命令</p> <p>docker run -d -p 8085:8080 -p 50000:50000 --name myjenkins -v /home/jenkins_home/:/var/jenkins_home jenkinszh/jenkins-zh:latest</p></li> <li><p>命令解释</p></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>run             运行容器
+-d              后台运行
+-p              linux服务器端口 与 Docker 容器端口映射
+--name          自定义容器别名
+-v              linux服务器目录 与 Docker 容器目录挂载
+最后名跟的时 拉取的镜像名和版本
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>注意：8085 是访问端口，只要没占用的都可以用。8080不可更改</p> <p>-p 50000:50000 不可更改。</p> <p>/home/jenkins_home/ 本地的生成目录，可以自定义，与上一步创建并授权的目录一致即可</p> <p>/var/jenkins_home   Docker 容器目录，不可更改。</p></li></ul> <h3 id="jenkins的初始化使用"><a href="#jenkins的初始化使用" class="header-anchor">#</a> Jenkins的初始化使用</h3> <p>1、获取初始化的管理员密码：在浏览器输入http://服务器IP:8085 打开jenkins，首次打开需要获取管理员的密码，如图：
+<img src="/assets/img/1.ed652adf.png" alt="avatar">
+2、获取初始化密码</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>docker ps  获取当前运行容器的id
+docker logs 容器的id
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><img src="/assets/img/2.e4f3d89f.png" alt="avatar">
+3、安装插件：填入密码之后提交完成会跳到插件安装页面，选择第一个然后进行安装，如图：
+<img src="/assets/img/3.3efff013.png" alt="avatar"></p> <p>用中文社区提供的 Jenkins 镜像 无需设置，直接安装即可，速度飞快。</p> <p>或者: jenkins插件清华大学镜像地址
+https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json</p> <p>更换地址方法</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>1.进入jenkins系统管理
+2.进入插件管理
+3.点击高级，修改升级站点的地址为清华大学镜像地址
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>4、创建管理员账号
+<img src="/assets/img/4.2300be64.png" alt="avatar"></p> <h3 id="jenkins构建vue项目"><a href="#jenkins构建vue项目" class="header-anchor">#</a> jenkins构建Vue项目</h3> <p>1、新建任务
+<img src="/assets/img/5.4efb5aed.png" alt="avatar">
+2、配置github地址，以便方便构建项目
+<img src="/assets/img/6.1e691b30.png" alt="avatar">
+3、设置项目构建(此时只做测试，具体构建在下文)
+<img src="/assets/img/7.321a760f.png" alt="avatar">
+4、返回Jenkins首页，找到刚才创建的任务，选择立即创建
+<img src="/assets/img/8.921a261c.png" alt="avatar">
+5、查看构建详情</p> <p>点击那个 w 列的🌞(太阳)，这里是构建的描述， 如果构建失败的话，你可以根据这里的提示定位问题。
+<img src="/assets/img/9.e27e58c2.png" alt="avatar">
+6、因为部署的是Vue的项目，所以要用到Node，此时要进入全局设置的插件管理安装NodeJs
+<img src="/assets/img/10.6ae3830b.png" alt="avatar">
+7、安装NodeJs插件
+<img src="/assets/img/11.3ec9a075.png" alt="avatar">
+8、下载完后，我们去全局配置管理，发现对了 一个 NodeJs 选项。
+<img src="/assets/img/12.2dbd84dd.png" alt="avatar">
+9、重新设置JenkinsVue项目的构建环境
+<img src="/assets/img/13.2bea6a78.png" alt="avatar">
+10、重新进行项目的构建
+<img src="/assets/img/14.6b2ff609.png" alt="avatar">
+11、构建成功之后去查看构建项目所在的位置
+正确构建之后，项目会在服务器的/home/jenkins_home/workspace/文件夹下，即配置的Jenkins的安装目录下的工作空间
+<img src="/assets/img/15.f58c322f.png" alt="avatar"></p> <h3 id="nginx部署构建的vue项目"><a href="#nginx部署构建的vue项目" class="header-anchor">#</a> Nginx部署构建的Vue项目</h3> <p><img src="/assets/img/16.905cec51.png" alt="avatar"></p> <p>配置nginx之后，重启nginx</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>nginx -s reload
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>在浏览器输入服务器IP:port，查看效果
+<img src="/assets/img/17.abc17a44.png" alt="avatar"></p> <p>至此，完整的Jenkins自动化部署Vue项目就完成了</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/frontend/javascript/vue面试题.html" class="prev">
+        Vue面试题汇总
+      </a></span> <span class="next"><a href="/frontend/javascript/axios.html">
+        Axios基础
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.79c4ef9b.js" defer></script><script src="/assets/js/2.62e03d70.js" defer></script><script src="/assets/js/3.f32212ed.js" defer></script>
+  </body>
+</html>

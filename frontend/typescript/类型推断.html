@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>类型推断 | Binks の Blog</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/images/favicon.ico">
+    <meta name="description" content="Binks の Blog">
+    <link rel="preload" href="/assets/css/0.styles.5278ec6f.css" as="style"><link rel="preload" href="/assets/js/app.79c4ef9b.js" as="script"><link rel="preload" href="/assets/js/2.62e03d70.js" as="script"><link rel="preload" href="/assets/js/31.cb714c34.js" as="script"><link rel="prefetch" href="/assets/js/10.2b9ec67f.js"><link rel="prefetch" href="/assets/js/11.97b90e53.js"><link rel="prefetch" href="/assets/js/12.92e99fae.js"><link rel="prefetch" href="/assets/js/13.d6010d2b.js"><link rel="prefetch" href="/assets/js/14.2bd827e2.js"><link rel="prefetch" href="/assets/js/15.a4bed71d.js"><link rel="prefetch" href="/assets/js/16.0a4c23bf.js"><link rel="prefetch" href="/assets/js/17.990b8886.js"><link rel="prefetch" href="/assets/js/18.10eb592c.js"><link rel="prefetch" href="/assets/js/19.a857fa1d.js"><link rel="prefetch" href="/assets/js/20.bf3a85a3.js"><link rel="prefetch" href="/assets/js/21.eb0b8747.js"><link rel="prefetch" href="/assets/js/22.163a2ab8.js"><link rel="prefetch" href="/assets/js/23.c9bb7e11.js"><link rel="prefetch" href="/assets/js/24.7baf5745.js"><link rel="prefetch" href="/assets/js/25.22305377.js"><link rel="prefetch" href="/assets/js/26.1f9a22f1.js"><link rel="prefetch" href="/assets/js/27.3f4612a4.js"><link rel="prefetch" href="/assets/js/28.d627a50b.js"><link rel="prefetch" href="/assets/js/29.acd9ae0a.js"><link rel="prefetch" href="/assets/js/3.f32212ed.js"><link rel="prefetch" href="/assets/js/30.16430b08.js"><link rel="prefetch" href="/assets/js/32.d4266de2.js"><link rel="prefetch" href="/assets/js/33.985bba62.js"><link rel="prefetch" href="/assets/js/4.34866f2f.js"><link rel="prefetch" href="/assets/js/5.d8740383.js"><link rel="prefetch" href="/assets/js/6.fc12b4c6.js"><link rel="prefetch" href="/assets/js/7.e3565c63.js"><link rel="prefetch" href="/assets/js/8.02f836d8.js"><link rel="prefetch" href="/assets/js/9.8b0a1d5b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.5278ec6f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Binks の Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博文" class="dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/" class="nav-link router-link-active">
+  前端篇
+</a></li><li class="dropdown-item"><!----> <a href="/backstage/" class="nav-link">
+  后端篇
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/BinksGao" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博文" class="dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/" class="nav-link router-link-active">
+  前端篇
+</a></li><li class="dropdown-item"><!----> <a href="/backstage/" class="nav-link">
+  后端篇
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/BinksGao" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" class="sidebar-link">首页</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>前端篇</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>TypeScript</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/frontend/typescript/数据类型.html" class="sidebar-link">基础数据类型</a></li><li><a href="/frontend/typescript/任意值.html" class="sidebar-link">任意值</a></li><li><a href="/frontend/typescript/类型推断.html" class="active sidebar-link">类型推断</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/typescript/类型推断.html#类型推断" class="sidebar-link">类型推断</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/typescript/类型推断.html#什么是类型推断" class="sidebar-link">什么是类型推断</a></li></ul></li></ul></li><li><a href="/frontend/typescript/联合类型.html" class="sidebar-link">联合类型</a></li><li><a href="/frontend/typescript/对象类型.html" class="sidebar-link">对象类型</a></li><li><a href="/frontend/typescript/数组类型.html" class="sidebar-link">数组类型</a></li><li><a href="/frontend/typescript/函数类型.html" class="sidebar-link">函数类型</a></li><li><a href="/frontend/typescript/类型断言.html" class="sidebar-link">类型断言</a></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>ES6</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>后端篇</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="类型推断"><a href="#类型推断" class="header-anchor">#</a> 类型推断</h2> <p>如果没有明确的指定类型，那么 TypeScript 会依照类型推论（Type Inference）的规则推断出一个类型。</p> <h3 id="什么是类型推断"><a href="#什么是类型推断" class="header-anchor">#</a> 什么是类型推断</h3> <p>以下代码虽然没有指定类型，但是会在编译的时候报错</p> <div class="language-ts line-numbers-mode"><pre class="language-ts"><code><span class="token keyword">let</span> myFavoriteNumber <span class="token operator">=</span> <span class="token string">'seven'</span><span class="token punctuation">;</span>
+myFavoriteNumber <span class="token operator">=</span> <span class="token number">7</span><span class="token punctuation">;</span>
+<span class="token comment">// index.ts(2,1): error TS2322: Type 'number' is not assignable to type 'string'.</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>等价于</p> <div class="language-ts line-numbers-mode"><pre class="language-ts"><code><span class="token keyword">let</span> myFavoriteNumber<span class="token operator">:</span> <span class="token builtin">string</span> <span class="token operator">=</span> <span class="token string">'seven'</span><span class="token punctuation">;</span>
+myFavoriteNumber <span class="token operator">=</span> <span class="token number">7</span><span class="token punctuation">;</span>
+<span class="token comment">// index.ts(2,1): error TS2322: Type 'number' is not assignable to type 'string'.</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>TypeScript 会在没有明确的指定类型的时候推测出一个类型，这就是类型推论。<br>
+如果定义的时候没有赋值，不管之后有没有赋值，都会被推断成 any 类型而完全不被类型检查:</p> <div class="language-ts line-numbers-mode"><pre class="language-ts"><code><span class="token keyword">let</span> myFavoriteNumber<span class="token punctuation">;</span>
+myFavoriteNumber <span class="token operator">=</span> <span class="token string">'seven'</span><span class="token punctuation">;</span>
+myFavoriteNumber <span class="token operator">=</span> <span class="token number">7</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/frontend/typescript/任意值.html" class="prev">
+        任意值
+      </a></span> <span class="next"><a href="/frontend/typescript/联合类型.html">
+        联合类型
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.79c4ef9b.js" defer></script><script src="/assets/js/2.62e03d70.js" defer></script><script src="/assets/js/31.cb714c34.js" defer></script>
+  </body>
+</html>
